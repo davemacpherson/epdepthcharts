@@ -10,7 +10,7 @@ team_list_short = ["ANA","ARI","BOS","BUF","CGY","CAR","CHI","COL","CBJ","DAL","
 
 # Initialize and loop through the team list
 team_no = 0
-while team_no < 32:
+while team_no < 31:
     # Select the team URL and shortened name from the two lists
     team_id = team_list[team_no]
     team_short = team_list_short[team_no]
