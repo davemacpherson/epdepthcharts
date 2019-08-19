@@ -34,7 +34,7 @@ while team_no < 31:
         if checkrow == "C" or checkrow == "LW" or checkrow == "RW" or checkrow == "D" or checkrow == "G":
             continue
         else:
-        # If the row is not a header row, append the output list with the team's shortened name, the player's signing status, the player's name, their contract end year, and their cap hit
+        # If the row is not a header row, append the output list with the team's shortened name, the player's signing status, the player's name, their contract end year, their cap hit, their EliteProspects URL, and their CapFriendly URL
             playerlist.append([team_list_short[team_no], playerrows[i].select('tr > td')[0].get_text(strip=True), playerrows[i].select('tr > td')[1].get_text(strip=True), playerrows[i].select('tr > td')[3].get_text(strip=True), playerrows[i].select('tr > td')[4].get_text(strip=True), playerrows[i].select('tr > td')[1].find('a').attrs['href'], playerrows[i].select('tr > td')[4].find('a').attrs['href']])
     print(playerlist)
     # Write the output to a CSV file
